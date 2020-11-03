@@ -1,0 +1,29 @@
+/* https://stackoverflow.com/questions/4535983/for-div-to-extend-full-height */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.gameRow {
+    height:25%;
+    border-collapse: separate;
+}
+.gameCell {
+    width:16.66%;
+}
+
+.redBorder {
+    border: 1px solid #f44336;
+}
+
+.blueBorder {
+    border: 1px solid #2196F3;
+}
+
+.mole {
+    background-image: url(mole.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}

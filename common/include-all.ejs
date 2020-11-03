@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="/w3.css">
+<link rel="stylesheet" href="/include-score.css">
+<script src="/common.js"></script>
+<script src="/sse.js"></script>
+<script src="/include-score.js"></script>
+<script src="/include-menu.js"></script>
+<script src="/include-modal.js"></script>
+<script>
+    g_gameConfig.id = "<%= ejsConfig.id %>"
+    g_gameConfig.relPath = "<%= ejsConfig.relPath %>"
+    g_gameConfig.label = "<%= ejsConfig.label %>"
+    g_gameConfig.maxScore = parseInt("<%= ejsConfig.maxScore %>");
+    log("include-all.ejs: g_gameConfig=" + JSON.stringify(g_gameConfig));
+</script>

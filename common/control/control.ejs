@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%=color%> Controller</title>
+    <!-- https://stackoverflow.com/questions/10614481/disable-double-tap-zoom-option-in-browser-on-touch-devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="/w3.css">
+    <link rel="stylesheet" href="/control.css">
+    <script src="/common.js"></script>
+    <script src="/control.js"></script>
+</head>
+<body>
+
+<!-- Note that I'm using a 'onclick' event directly on the div instead of using a button -->
+<!-- This is because mobile Safari zooms when double tapping on a button and this cannot be disabled -->
+
+<div class="w3-cell-row">
+    <div class="w3-cell w3-display-container">
+        <div id="upleftButton" class="w3-display-middle w3-<%= color %> w3-btn w3-ripple w3-round-xlarge"
+             onclick="asyncPost('<%=color%>', g_controls.upleft)">
+
+        </div>
+    </div>
+    <div class="w3-cell w3-display-container">
+        <div id="upButton" class="w3-display-middle w3-<%= color %> w3-btn w3-ripple w3-round-xlarge"
+             onclick="asyncPost('<%=color%>', g_controls.up)">
+            <h1 class="w3-display-middle" >&#8593;</h1>
+        </div>
+    </div>
+    <div class="w3-cell w3-display-container">
+        <div id="uprightButton" class="w3-display-middle w3-<%= color %> w3-btn w3-ripple w3-round-xlarge"
+             onclick="asyncPost('<%=color%>', g_controls.upright)">
+        </div>
+    </div>
+</div>
+
+<div class="w3-cell-row">
+    <div class="w3-cell w3-display-container">
+        <div id="leftButton" class="w3-display-middle w3-<%= color %> w3-btn w3-ripple w3-round-xlarge"
+             onclick="asyncPost('<%=color%>', g_controls.left)">
+            <h1 class="w3-display-middle" >&#8592;</h1>
+        </div>
+    </div>
+    <div class="w3-cell w3-display-container">
+        <div id="centerButton" class="w3-display-middle w3-<%= color %> w3-btn w3-ripple w3-round-xlarge"
+             onclick="asyncPost('<%=color%>', g_controls.center)">
+            <h1 class="w3-display-middle" >&nbsp;</h1>
+        </div>
+    </div>
+    <div class="w3-cell w3-display-container">
+        <div id="rightButton" class="w3-display-middle w3-<%= color %> w3-btn w3-ripple w3-round-xlarge"
+             onclick="asyncPost('<%=color%>', g_controls.right)">
+            <h1 class="w3-display-middle" >&#8594;</h1>
+        </div>
+    </div>
+</div>
+
+<div class="w3-cell-row">
+    <div class="w3-cell w3-display-container">
+        <div id="downleftButton" class="w3-display-middle w3-<%= color %> w3-btn w3-ripple w3-round-xlarge"
+             onclick="asyncPost('<%=color%>', g_controls.downleft)">
+
+        </div>
+    </div>
+    <div class="w3-cell w3-display-container">
+        <div id="downButton" class="w3-display-middle w3-<%= color %> w3-btn w3-ripple w3-round-xlarge"
+             onclick="asyncPost('<%=color%>', g_controls.down)">
+            <h1 class="w3-display-middle" >&#8595;</h1>
+        </div>
+    </div>
+    <div class="w3-cell w3-display-container">
+        <div id="downrightButton" class="w3-display-middle w3-<%= color %> w3-btn w3-ripple w3-round-xlarge"
+             onclick="asyncPost('<%=color%>', g_controls.downright)">
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game 4</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%- include('include-all'); %>
+    <link rel="stylesheet" href="game4.css">
+    <script src="game4.js"></script>
+</head>
+<body>
+
+<%- include('include-score'); %>
+
+<!-- used by Selenium tests to get the ID of the cell which currently displays the mole -->
+<input id="redCellId" type="hidden" value="">
+<input id="blueCellId" type="hidden" value="">
+
+<div class="gameRow w3-cell-row">
+    <div id="redupleft" class="w3-cell gameCell redBorder">
+        &nbsp;
+    </div>
+    <div id="redup" class="w3-cell gameCell redBorder">
+        &nbsp;
+    </div>
+    <div id="redupright" class="w3-cell gameCell redBorder">
+        &nbsp;
+    </div>
+    <div id="blueupleft" class="w3-cell gameCell blueBorder">
+        &nbsp;
+    </div>
+    <div id="blueup" class="w3-cell gameCell blueBorder">
+        &nbsp;
+    </div>
+    <div id="blueupright" class="w3-cell gameCell blueBorder">
+        &nbsp;
+    </div>
+</div>
+
+<div class="gameRow w3-cell-row">
+    <div id="redleft" class="w3-cell gameCell redBorder">
+        &nbsp;
+    </div>
+    <div id="redcenter" class="w3-cell gameCell redBorder">
+        &nbsp;
+    </div>
+    <div id="redright" class="w3-cell gameCell redBorder">
+        &nbsp;
+    </div>
+    <div id="blueleft" class="w3-cell gameCell blueBorder">
+        &nbsp;
+    </div>
+    <div id="bluecenter" class="w3-cell gameCell blueBorder">
+        &nbsp;
+    </div>
+    <div id="blueright" class="w3-cell gameCell blueBorder">
+        &nbsp;
+    </div>
+</div>
+
+<div class="gameRow w3-cell-row">
+    <div id="reddownleft" class="w3-cell gameCell redBorder">
+        &nbsp;
+    </div>
+    <div id="reddown" class="w3-cell gameCell redBorder">
+        &nbsp;
+    </div>
+    <div id="reddownright" class="w3-cell gameCell redBorder">
+        &nbsp;
+    </div>
+    <div id="bluedownleft" class="w3-cell gameCell blueBorder">
+        &nbsp;
+    </div>
+    <div id="bluedown" class="w3-cell gameCell blueBorder">
+        &nbsp;
+    </div>
+    <div id="bluedownright" class="w3-cell gameCell blueBorder">
+        &nbsp;
+    </div>
+</div>
+
+
+<%- include('include-menu'); %>
+
+<%- include('include-modal'); %>
+
+</body>
+</html>

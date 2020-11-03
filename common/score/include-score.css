@@ -1,0 +1,8 @@
+.redScoreSection {
+    /* width required otherwise the section will increase size when score increases from 9 to 10 */
+    width: 50%;
+}
+
+.blueScoreSection {
+    width: 50%;
+}

@@ -1,0 +1,39 @@
+<div class="w3-display-bottomleft">
+    <img id="startGameButton" class="w3-btn w3-ripple" src="/menu-play-4.png"
+         onclick="Menu.onPlayButtonClicked()">
+    <br>
+    <img id="showConfigButton" class="w3-btn w3-ripple" src="/menu-configuration-32.png"
+         onclick="Menu.onConfigButtonClicked()">
+    <form id="reloadGameButton" action="/<%= ejsConfig.relPath %>" method="get">
+        <input id="maxScore" name="maxScore" type="number" class="w3-hide"/>
+        <img class="w3-btn w3-ripple" src="/menu-reload-32.png"
+             onclick="Menu.onReloadButtonClicked();">
+    </form>
+    <form id="goHomeButton" action="/" method="get">
+        <img class="w3-btn w3-ripple" src="/menu-home-32.png"
+             onclick="this.parentNode.submit();">
+    </form>
+    <img id="openRedControllerButton" class="w3-btn w3-ripple" src="/menu-controler-32.png"
+         onclick="window.open('/control/red','_blank')">
+    <br>
+    <img id="openBlueControllerButton" class="w3-btn w3-ripple" src="/menu-controler-32.png"
+         onclick="window.open('/control/blue','_blank')">
+    <!--<span>Status:<span id="log"></span></span>-->
+</div>
+
+<div id="configModal" class="w3-modal ">
+    <div class="w3-modal-content">
+        <header class="w3-container w3-teal">
+        <span onclick="byId('configModal').style.display='none'"
+              class="w3-button w3-display-topright">&times;</span>
+            <h2>Configuration</h2>
+        </header>
+        <div class="w3-container w3-padding-16">
+            <label>Max score</label>
+            <input type="number" id="configMaxScore" class="w3-input w3-border" type="text">
+        </div>
+        <div id="configModalCloseButton" class="w3-container w3-center w3-padding-16">
+            <button class="w3-button w3-teal " onclick="Menu.onConfigModalClosed()">OK</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Games</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/w3.css">
+    <script src="/common.js"></script>
+</head>
+<body>
+<div class="w3-container w3-teal w3-center">
+    <h1>Select a game</h1>
+</div>
+
+<% for (let nextGameConfig of gameConfigs) { %>
+<div class="w3-cell-row w3-margin">
+    <div class="w3-cell w3-center">
+        <form action="<%= nextGameConfig.relPath %>" method="get">
+            <button id="<%= nextGameConfig.id %>"
+                    class="w3-button w3-teal"
+                    onclick="this.parentNode.submit();"><%= nextGameConfig.label %></button>
+        </form>
+    </div>
+</div>
+<% } %>
+
+<div class="w3-display-bottomleft">
+    <!-- TODO: generate at compile time -->
+    Released on Feb 17th
+</div>
+
+</body>
+</html>

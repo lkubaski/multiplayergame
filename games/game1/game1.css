@@ -1,0 +1,23 @@
+/* https://stackoverflow.com/questions/4535983/for-div-to-extend-full-height */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.gameArea {
+    height:75%;
+}
+
+.redGame {
+    /*border: 2px solid red;*/
+}
+
+.blueGame {
+    /*border: 2px solid blue;*/
+}
+
+canvas {
+    /*border: 1px solid #000000;*/
+}
+

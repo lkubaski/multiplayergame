@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game 3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%- include('include-all'); %>
+    <link rel="stylesheet" href="game3.css">
+    <script src="game3.js"></script>
+</head>
+<body>
+
+<%- include('include-score'); %>
+
+<div class="gameDiv w3-cell-row w3-center">
+    <div class="w3-cell w3-cell-middle">
+        <img id="redActionImg" class="direction" src="arrow-up.png">
+        <input id="redActionDiv" type="hidden" value="up">
+    </div>
+    <div class="w3-cell w3-cell-middle">
+        <img id="blueActionImg" class="direction" src="arrow-up.png">
+        <input id="blueActionDiv" type="hidden" value="up">
+    </div>
+</div>
+
+<%- include('include-menu'); %>
+
+<%- include('include-modal'); %>
+
+</body>
+</html>

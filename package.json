@@ -1,0 +1,28 @@
+{
+  "name": "multiplayergame",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "jest": "^24.1.0",
+    "selenium-webdriver": "^4.0.0-alpha.1"
+  },
+  "jest": {
+    "rootDir": "./test",
+    "setupFilesAfterEnv": [
+      "<rootDir>/jestSetup.js"
+    ]
+  },
+  "scripts": {
+    "start": "node server.js",
+    "_": "make sure that the server is started before running the tests:",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC"
+}

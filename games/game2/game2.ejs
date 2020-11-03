@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%- include('include-all'); %>
+    <link rel="stylesheet" href="game2.css">
+    <script src="game2.js"></script>
+</head>
+<body>
+
+<%- include('include-score'); %>
+
+<div class="separators w3-cell-row">
+    <div id="firstSeparator" class="firstSeparator w3-cell">
+    </div>
+    <div class="secondSeparator w3-cell">
+    </div>
+    <div class="thirdSeparator w3-cell">
+    </div>
+    <div id="fourthSeparator" class="fourthSeparator w3-cell">
+    </div>
+</div>
+
+<div class="ropeDiv w3-cell-row w3-center">
+    <div class="w3-cell w3-cell-middle">
+        <img alt="rope" id="rope" class="rope" src="rope.png"/>
+    </div>
+</div>
+
+<%- include('include-menu'); %>
+
+<%- include('include-modal'); %>
+
+</body>
+</html>

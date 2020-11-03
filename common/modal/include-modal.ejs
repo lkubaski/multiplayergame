@@ -1,0 +1,16 @@
+<!-- Note: do NOT remove the 'id' attribute since it's used to dynamically display the dialog -->
+<div id="winnerModal" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+        <header class="w3-container w3-teal">
+        <span onclick="document.getElementById('winnerModal').style.display='none'"
+              class="w3-button w3-display-topright">&times;</span>
+            <h2>And the winner is:</h2>
+        </header>
+        <div class="w3-container w3-center w3-padding-16">
+            <img alt="winner" id="winnerImage" src="/trophy-blank.png" style="max-height: 50%;max-width: 50%">
+        </div>
+        <div class="w3-teal w3-container w3-center w3-padding-16">
+            <button id="closeWinnerModalButton" class="w3-button" onclick="document.getElementById('winnerModal').style.display='none'">Close</button>
+        </div>
+    </div>
+</div>

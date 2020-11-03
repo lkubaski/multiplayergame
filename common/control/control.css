@@ -1,0 +1,17 @@
+/* https://stackoverflow.com/questions/4535983/for-div-to-extend-full-height */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.w3-cell-row {
+    height:33%;
+}
+.w3-cell {
+    width:33%;
+}
+.w3-btn {
+    height: 90%;
+    width: 90%
+}

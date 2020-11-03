@@ -1,0 +1,17 @@
+/* https://stackoverflow.com/questions/4535983/for-div-to-extend-full-height */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.gameDiv {
+    height: 75%;
+}
+
+/* https://css-tricks.com/almanac/properties/o/object-fit/ */
+.direction {
+    width: 75%; /* or any custom size */
+    height: 75%;
+    object-fit: contain;
+}

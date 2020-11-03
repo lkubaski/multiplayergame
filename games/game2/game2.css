@@ -1,0 +1,42 @@
+/* https://stackoverflow.com/questions/4535983/for-div-to-extend-full-height */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.separators {
+    height: 75%;
+    /* absolute = positioned relative to the nearest positioned ancestor */
+    position: absolute;
+    z-index: -1;
+}
+
+.firstSeparator {
+    border-right: thick dotted red;
+}
+
+.secondSeparator {
+    /* for some reason having a border is required otherwise the 4 columns will not have the same width */
+    border-right: thick dotted white;
+}
+
+.thirdSeparator {
+    border-right: thick dotted white;
+}
+
+.fourthSeparator {
+    border-left: thick dotted blue;
+}
+
+.ropeDiv {
+    /* this centers the div content vertically at 3/4 of the screen */
+    height: 75%;
+}
+
+.rope {
+    /* https://www.w3schools.com/css/css3_object-fit.asp */
+    width: 75%;
+    height: 75%;
+    object-fit: contain;
+}
