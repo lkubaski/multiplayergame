@@ -1,7 +1,18 @@
+### Description
+
 A basic Javascript game engine for 2 players or more.
 
-Technology Stack:
-- [Express](https://expressjs.com)
-- [EJS](https://ejs.co)
-- [Server-sent events](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events)
-- [Canvas](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API)
+### Technology Stack
+- Language: [Vanilla Javascript](http://vanilla-js.com)
+- Frontend: HTML & [EJS](https://ejs.co)
+- Backend: [Express](https://expressjs.com) & [Server-sent events](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events)
+
+### Screenshots
+
+![screen1](resources/game1.png)
+
+![screen2](resources/game2.png)
+
+![screen3](resources/game3.png)
+
+![screen4](resources/game4.png)
