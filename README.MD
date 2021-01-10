@@ -1,6 +1,6 @@
 ### Description
 
-A basic Javascript game engine for 2 players or more.
+A basic Javascript game engine for 2 players or more. The idea is to use the phone as the game controller and use a dedicated computer screen to display the game canvas.
 
 ### Technology Stack
 - Language: [Vanilla Javascript](http://vanilla-js.com)
